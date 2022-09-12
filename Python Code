@@ -1,0 +1,19 @@
+#Input
+a = input()
+b = ''
+for x in range(31):
+    c = ''
+    c = input()
+    b = b + ', ' + c
+colleges = a + b
+college_list = colleges.split(', ')
+
+# Use this when you need to print out every college application and accceptance from input into a list
+print(len(college_list))
+for i in sorted(college_list):
+   print(i)
+
+# Use this to produce a list of every college applied to from A to Z without any repeats
+x = sorted(set(college_list))
+for i in x:
+  print(i)
