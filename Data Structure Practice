@@ -1,0 +1,36 @@
+# Getting Basic Info
+college_data = {}
+
+# Create College List
+print('Enter college names:')
+all_colleges = ''
+college_input = ' '
+while college_input != '':
+    college_input = ''
+    college_input = input()
+    all_colleges += ', ' + college_input
+college_list = all_colleges.split(', ')
+college_list.pop(0)
+college_list.pop(-1)
+num_colleges = len(college_list)
+
+# Create College Acceptance Rate Data
+all_colleges_accept_rate = ''
+print('Enter corresponding acceptance rates: ')
+for i in range(num_colleges):
+    college_acceptance_rate = ''
+    college_acceptance_rate = input()
+    all_colleges_accept_rate += ', ' + college_acceptance_rate
+
+college_acceptance_rate_list = all_colleges_accept_rate.split(', ')
+college_acceptance_rate_list.pop(0)
+
+# Create College Data Structure
+for i in range(num_colleges):
+  college_data[college_list[i]] = float(college_acceptance_rate_list[i])
+
+# Show what you made
+print()
+print('Colleges:', college_list)
+print('College TOC Acceptance Rate:', college_acceptance_rate_list)
+print('College Data Structure:', college_data)
