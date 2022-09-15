@@ -17,3 +17,8 @@ for i in sorted(college_list):
 x = sorted(set(college_list))
 for i in x:
   print(i)
+
+# Use this to produce a list of every college applied to from A to Z without any repeats AND tells you how many for each college
+x = sorted(set(college_list))
+for i in x:
+  print(f'{i} {college_list.count(i)}')
