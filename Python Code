@@ -1,6 +1,7 @@
 #Input
 a = input()
 b = ''
+# For range, make sure it is how many entries you will have (times you will press enter) MINUS 1.
 for x in range(31):
     c = ''
     c = input()
