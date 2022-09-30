@@ -1,0 +1,11 @@
+# PostType,Likes,DM,Bookmarks,Profile Visits,Accounts Reached,% not following,new follows
+# Go to separate google docs and type it out in the above format, use the space bar for new post, comma for new data type
+
+string = 'Scholarships,47,18,25,8,322,19,2 Scholarships,82,60,65,42,529,22,16 APE,25,0,2,6,275,12,0 CollegeTips,26,8,3,3,247,13,2 Scholarships,58,19,26,17,473,19,2 Scholarships,53,11,26,11,435,16,2 Scholarships,60,30,27,35,402,18,6 CollegeLife,42,14,10,1,283,20,0 APE,61,8,16,11,445,34,6 APE,24,5,5,33,283,30,4 CollegeLife,15,0,4,5,221,19,0 Scholarships,70,47,38,35,398,27,0 APE,124,95,77,163,672,58,42 Scholarships,52,16,30,20,324,24,2 CollegeFinance,38,25,11,9,340,33,0 APE,44,22,13,12,390,36,0 Scholarships,54,32,29,15,504,54,6 APE,31,16,6,31,333,46,4 APE,19,4,0,3,231,27,0 Scholarships,29,7,16,11,271,22,0 APE,19,7,4,6,281,31,4 APE,21,5,3,5,253,20,2 Scholarships,56,16,26,21,359,29,2 APE,23,10,4,10,250,28,0'
+PostsList = sorted(string.split(" "))
+print(PostsList)
+NumPosts = len(PostsList)
+
+for x in range(NumPosts):
+    c = PostsList[x].replace(',','\t')
+    print(c)
